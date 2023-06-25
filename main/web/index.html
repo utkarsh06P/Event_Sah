@@ -55,5 +55,30 @@
       });
     });
   </script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+  <script type="module">
+  import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBkbGExj0AXQIhcgRpE2fsGgfu5pX8TRME",
+  authDomain: "eventsah-d8f4c.firebaseapp.com",
+  projectId: "eventsah-d8f4c",
+  storageBucket: "eventsah-d8f4c.appspot.com",
+  messagingSenderId: "102690915301",
+  appId: "1:102690915301:web:b01a21d3f70db08313250c",
+  measurementId: "G-BNVDN4NF1H"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+  </script>
+  
 </body>
 </html>
